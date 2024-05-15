@@ -1,0 +1,20 @@
+{
+  "title": "مرحبا بك",
+  "description": {
+    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+    "part2": "Switch language between english and german using buttons above."
+  },
+  "Navbar": {
+    "home": "الرئيسية",
+    "knowledge": "أدارة المعرفة",
+    "document": "أدارة الوثائق",
+    "business": "أداراة الاعمال",
+    "apps": "المواقع والتطبيقات",
+    "logo": "المنصة الرقمية"
+  },
+  "SmallNav": {
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "clients": "العملاء"
+  }
+}
