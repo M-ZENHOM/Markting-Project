@@ -18,7 +18,6 @@ export default function Root() {
         <Outlet />
       </main>
       <Footer translate={t} />
-      {/* <TanStackRouterDevtools /> */}
     </>
   );
 }
