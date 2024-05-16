@@ -1,3 +1,4 @@
+import { cn } from "@/utils/tailwind";
 import { GradientText } from "../GradientText";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
@@ -8,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
+import i18n from "@/i18n";
 
 interface IGoalsProps {
   translate: (
@@ -37,18 +39,23 @@ export default function OurGoals({ translate }: IGoalsProps) {
         <CarouselContent className="-ml-1">
           {goals.map((goal, i) => (
             <CarouselItem key={i} className="pl-1 md:basis-1/2 lg:basis-1/3">
-              <Card className="h-full relative z-10 rounded-2xl group border border-purple-500/25">
-                <div className="absolute top-0 rounded-2xl left-0 w-full h-full bg-gradient-to-tr from-purple-500/15 to-yellow-500/15 -z-10" />
+              <Card className="flex flex-col h-[500px] group relative  rounded-3xl border border-gray-300 backdrop-blur-lg transition-all hover:shadow-lg row-span-2 bg-gradient-to-tr from-transparent via-transparent to-[rgb(133,94,255,0.25)] bg-white">
                 <CardHeader>
                   <CardTitle>{goal.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <img
-                    className="rounded-2xl w-full h-[250px] group-hover:scale-105 transition-transform "
+                    className={cn(
+                      "absolute -right-2 rounded-l-full w-[400px] h-[250px] p-2 transition-transform group-hover:scale-110",
+                      {
+                        "-left-2 top-14 rounded-l-[0px]  rounded-r-full ":
+                          i18n.language === "en",
+                      }
+                    )}
                     src={goal.icon}
                     alt="test"
                   />
-                  <p className="text-lg font-semibold my-4 ">
+                  <p className="absolute bottom-1 text-md font-semibold my-4 ">
                     {goal.description}
                   </p>
                 </CardContent>

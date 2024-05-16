@@ -29,8 +29,13 @@ export default function OurServices({ translate }: IServicesProps) {
           {services.map((service) => (
             <Card
               key={service.title}
-              className="w-[400px] p-2 flex flex-col justify-center items-center text-center grainy"
+              className="h-full min-h-[300px]  flex flex-col justify-center items-center group relative list-none break-inside-avoid rounded-3xl border border-gray-300 backdrop-blur-lg transition-all hover:shadow-lg row-span-2 bg-gradient-to-tr from-transparent via-transparent to-[rgb(133,94,255,0.25)] bg-white"
             >
+              <img
+                src="/BlackGrid.png"
+                alt="Dotted grid background"
+                className="pointer-events-none absolute right-0 top-0"
+              />
               <CardHeader>
                 <CardTitle>
                   {service.icon === "website" ? (
@@ -42,7 +47,7 @@ export default function OurServices({ translate }: IServicesProps) {
                   )}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="font-bold text-xl leading-[1.30] text-primary/75">
+              <CardContent className="font-bold text-xl leading-[1.30] text-primary/75 text-center">
                 {service.title}
               </CardContent>
             </Card>

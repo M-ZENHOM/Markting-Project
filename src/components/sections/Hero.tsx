@@ -9,9 +9,8 @@ interface IHeroProps {
 export default function Hero({ translate }: IHeroProps) {
   return (
     <MaxWidthWrapper className="relative py-[100px]">
-      <div className="absolute  w-[800px] h-[200px] bg-gradient-to-br from-purple-500 to-yellow-500 rounded-full blur-[130px] z-[1px] opacity-50 " />
-      <div className="absolute  left-0 bottom-[-150px] w-[800px] h-[200px] bg-gradient-to-br from-purple-500 to-yellow-500 rounded-full blur-[130px] z-[1px] opacity-50 " />
-
+      <div className="absolute  w-[800px] h-[200px] bg-gradient-to-br from-purple-500 to-[rgb(133,94,255,0.25)] rounded-full blur-[130px] z-[1px] opacity-50 " />
+      <div className="absolute  left-0 bottom-[-150px] w-[800px] h-[200px] bg-gradient-to-br from-purple-500 to-[rgb(133,94,255,0.25)] rounded-full blur-[130px] z-[1px] opacity-50 " />
       <div className="relative flex flex-col justify-center items-center w-full max-w-[800px] mx-auto gap-5 z-[2px]">
         <motion.div
           initial={{ translateY: -20, opacity: 0 }}
