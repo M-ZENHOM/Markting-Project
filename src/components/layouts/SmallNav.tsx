@@ -6,7 +6,7 @@ import MaxWidthWrapper from "../MaxWidthWrapper";
 export default function SmallNav() {
   const { t } = useTranslation();
   return (
-    <nav className="bg-slate-500 text-white">
+    <nav className="bg-primary text-white">
       <MaxWidthWrapper className="flex items-center justify-center gap-6 p-2">
         <Link to="/" className="flex items-center gap-2">
           {t("SmallNav.about")}

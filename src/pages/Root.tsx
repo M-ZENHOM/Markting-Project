@@ -1,11 +1,11 @@
+import Footer from "@/components/layouts/Footer";
 import { Outlet } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
-import Navbar from "../components/layouts/Navbar";
 import { useTranslation } from "react-i18next";
+import Navbar from "../components/layouts/Navbar";
 import SmallNav from "../components/layouts/SmallNav";
 
 export default function Root() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   return (
     <>
@@ -17,7 +17,8 @@ export default function Root() {
       >
         <Outlet />
       </main>
-      <TanStackRouterDevtools />
+      <Footer translate={t} />
+      {/* <TanStackRouterDevtools /> */}
     </>
   );
 }

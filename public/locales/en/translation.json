@@ -16,5 +16,63 @@
     "about": "About",
     "contact": "Contact Us",
     "clients": "Clients"
+  },
+  "HeroSection": {
+    "subTitle": "Digital Platform",
+    "title": "Experts in Document Management and Archive Management in Saudi Arabia",
+    "description": "We have implemented many projects that have satisfied our customers, and we seek to serve more customers to achieve their goals in document management, electronic archiving, and the design and programming of mobile applications, websites, and administrative systems."
+  },
+  "business": {
+    "title": "What we do?",
+    "services": [
+      {
+        "title": "Information technology solutions and services, mobile applications and websites.",
+        "icon": "website"
+      },
+      {
+        "title": "Knowledge management solutions and services, academic systems and electronic publishing",
+        "icon": "knowledge"
+      },
+      {
+        "title": "Solutions and services for document management, documents and electronic archiving",
+        "icon": "document"
+      }
+    ]
+  },
+  "goals": {
+    "title": "Summary of our goals",
+    "description": "The digital platform for information technology seeks to enhance customers’ benefit from modern technologies. Enabling the business sector to transition to electronic management",
+    "goals": [
+      {
+        "title": "electronic archive",
+        "description": "The influx of documents constitutes a huge burden on government sectors and companies, consuming time and effort, as well as the loss and loss of documents. Our solutions help control documents within the organization and contribute to raising productivity, controlling quality processes, and better compliance with auditing and oversight systems and laws.",
+        "icon": "goals/goals.jpg"
+      },
+      {
+        "title": "Enterprise content management",
+        "description": "The influx of documents constitutes a huge burden on government sectors and companies, consuming time and effort, as well as the loss and loss of documents. Our solutions help control documents within the organization and contribute to raising productivity, controlling quality processes, and better compliance with auditing and oversight systems and laws.",
+        "icon": "goals/goals-two.jpg"
+      },
+      {
+        "title": "Document management",
+        "description": "The influx of documents constitutes a huge burden on government sectors and companies, consuming time and effort, as well as the loss and loss of documents. Our solutions help control documents within the organization and contribute to raising productivity, controlling quality processes, and better compliance with auditing and oversight systems and laws.",
+        "icon": "goals/goals-three.jpg"
+      },
+      {
+        "title": "Management",
+        "description": "The influx of documents constitutes a huge burden on government sectors and companies, consuming time and effort, as well as the loss and loss of documents. Our solutions help control documents within the organization and contribute to raising productivity, controlling quality processes, and better compliance with auditing and oversight systems and laws.",
+        "icon": "/hero-img.jpg"
+      }
+    ]
+  },
+  "partners": {
+    "title": "Partners of Digital Platform"
+  },
+  "footer": {
+    "logo": "Digital Platform",
+    "copyright": "Copyright © 2024 Digital Platform. All Rights Reserved.",
+    "title": "How can we help you. get in touch",
+    "description": " To ensure that all Wikipedia content is verifiable, anyone mayquestion an uncited claim. If your work has been tagged",
+    "btn": "Contact Us"
   }
 }

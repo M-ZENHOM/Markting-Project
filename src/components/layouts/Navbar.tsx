@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "-top-20 bg-primary text-primary-foreground transition-all duration-500 p-2",
+        "-top-20 bg-white text-white-foreground transition-all duration-500 p-2",
         {
           "sticky top-2 z-50 w-full max-w-[1440px] mx-auto rounded-lg transition-all duration-500":
             scrollPosition > 100,
