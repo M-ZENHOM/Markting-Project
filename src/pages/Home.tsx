@@ -1,3 +1,4 @@
+import Head from "@/components/Head";
 import Hero from "@/components/sections/Hero";
 import OurGoals from "@/components/sections/OurGoals";
 import OurServices from "@/components/sections/OurServices";
@@ -8,6 +9,7 @@ export default function HomePage() {
   const { t } = useTranslation();
   return (
     <main>
+      <Head title={t("title")} description={t("description")} />
       <Hero translate={t} />
       <OurServices translate={t} />
       <OurGoals translate={t} />

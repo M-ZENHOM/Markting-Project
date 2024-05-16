@@ -1,9 +1,6 @@
 {
-  "title": "Welcome",
-  "description": {
-    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-    "part2": "Switch language between english and german using buttons above."
-  },
+  "title": "Digital Platform",
+  "description": "Digital platform for information technology seeks to enhance customers’ benefit from modern technologies. Enabling the business sector to transition to electronic management",
   "Navbar": {
     "home": "Home",
     "knowledge": "Knowledge Management",

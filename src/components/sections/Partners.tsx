@@ -1,12 +1,15 @@
-import Marquee from "react-fast-marquee";
+import Marquee from "react-marquee-slider";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 
 const partners = [
   "/partners/01.jpg",
-  "/partners/02.jpg",
+  "/partners/05.jpg",
   "/partners/03.jpg",
   "/partners/04.jpg",
   "/partners/05.jpg",
+  "/partners/02.jpg",
+  "/partners/05.jpg",
+  "/partners/04.jpg",
   "/partners/06.jpg",
 ];
 interface IPartnersProps {
@@ -19,7 +22,14 @@ export default function Partners({ translate }: IPartnersProps) {
         {translate("partners.title")}
       </h1>
       <div className="bg-gradient-to-br from-primary/10 rounded-xl my-20">
-        <Marquee direction="right" pauseOnHover speed={200} autoFill>
+        <Marquee
+          direction="rtl"
+          scatterRandomly={false}
+          resetAfterTries={10}
+          velocity={100}
+          onInit={() => console.log("Marquee initialized")}
+          onFinish={() => console.log("Marquee finished")}
+        >
           {partners.map((item, i) => (
             <img key={i} src={item} className="w-36 h-36 ml-4" alt="test" />
           ))}
