@@ -1,3 +1,4 @@
+import { GradientText } from "../GradientText";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import {
@@ -24,14 +25,15 @@ export default function OurGoals({ translate }: IGoalsProps) {
   return (
     <MaxWidthWrapper className="py-[100px]">
       <div className="space-y-5 mb-10">
-        <h1 className="text-4xl font-bold text-center">
-          {translate("goals.title")}
-        </h1>
+        <GradientText
+          className="text-5xl font-bold text-center"
+          text={translate("goals.title")}
+        />
         <p className="text-xl w-full max-w-[600px] mx-auto text-center">
           {translate("goals.description")}
         </p>
       </div>
-      <Carousel className="w-full ">
+      <Carousel dir="ltr" className="w-full ">
         <CarouselContent className="-ml-1">
           {goals.map((goal, i) => (
             <CarouselItem key={i} className="pl-1 md:basis-1/2 lg:basis-1/3">

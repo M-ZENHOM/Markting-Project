@@ -1,3 +1,4 @@
+import { GradientText } from "../GradientText";
 import { Icons } from "../Icons";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
@@ -19,9 +20,10 @@ export default function OurServices({ translate }: IServicesProps) {
 
   return (
     <div className="w-full py-10 bg-white relative z-[2px] space-y-10">
-      <h1 className="text-4xl font-bold text-center">
-        {translate("business.title")}
-      </h1>
+      <GradientText
+        className="text-5xl font-bold text-center"
+        text={translate("business.title")}
+      />
       <MaxWidthWrapper>
         <div className="grid grid-cols-fluid  gap-4">
           {services.map((service) => (

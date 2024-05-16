@@ -1,5 +1,6 @@
 import Marquee from "react-marquee-slider";
 import MaxWidthWrapper from "../MaxWidthWrapper";
+import { GradientText } from "../GradientText";
 
 const partners = [
   "/partners/01.jpg",
@@ -18,9 +19,10 @@ interface IPartnersProps {
 export default function Partners({ translate }: IPartnersProps) {
   return (
     <MaxWidthWrapper className="py-[100px]">
-      <h1 className="relative text-4xl font-bold text-center before:content-[''] before:absolute before:-bottom-5 before:left-[50%] before:-translate-x-[50%]  before:w-20 before:h-1 before:bg-gradient-to-br before:from-primary before:to-purple-500">
-        {translate("partners.title")}
-      </h1>
+      <GradientText
+        className="relative text-5xl font-bold text-center before:content-[''] before:absolute before:-bottom-5 before:left-[50%] before:-translate-x-[50%]  before:w-20 before:h-1 before:bg-gradient-to-br before:from-primary before:to-purple-500"
+        text={translate("partners.title")}
+      />
       <div className="bg-gradient-to-br from-primary/10 rounded-xl my-20">
         <Marquee
           direction="rtl"
